@@ -1,0 +1,38 @@
+@media screen and (max-width:600px) {
+    nav{
+       
+
+    }
+    nav ul{
+        display: none;
+        opacity: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        background-color: white;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .tampil-nav-ul{
+        display: flex;
+        opacity: 1;
+    }
+    .hamburger-icon{
+        display: flex;
+        z-index: 2;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    .hero-img{
+        margin-right: 0;
+    }
+
+    .hero-txt{
+        margin-top: 20px;
+    }
+}
