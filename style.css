@@ -10,11 +10,20 @@ body{
     font-family: "Poppins", Arial, Helvetica, sans-serif
 }
 
+/* Navbar */
+.container{
+    position: relative;
+}
 nav{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     height: 80px;
     align-items: center;
+    background-color: white;
+    top: 0;
+    
     
 }
 .hamburger-icon{
@@ -39,10 +48,14 @@ nav ul{
     justify-content: space-evenly;
 }
 
+/* End Navbar */
+
+/* home */
+
 #home{
     margin-top: 30px;
     /* background-color: pink; */
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +119,10 @@ div.in-gthb > img:nth-child(1){
     margin-right: 20px;
 }
 
+/* end home */
 
+
+/* about */
 #about{
     /* background-color: aliceblue; */
     margin-top: 80px;
@@ -149,7 +165,7 @@ section#about > h1{
     justify-content: space-evenly;
 }
 
-.about-content .experience{
+.about-content .experience-education .experience{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,13 +174,19 @@ section#about > h1{
     border: 2px solid black;
     border-radius: 16px;
     padding: 1px 60px;
-    
-
-    
-
 }
 
-.about-content .education{
+.experience-education > p:last-child{
+    margin-top: 20px; 
+    margin-left: 30px;
+}
+
+.fa-solid.fa-award.fa-2xl{
+    margin-bottom: 20px; 
+    margin-top:20px;
+}
+
+.about-content .experience-education .education{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +195,160 @@ section#about > h1{
     border: 2px solid black;
     border-radius: 16px;
     padding: 1px 60px;
-    
+}
+
+.fa-solid.fa-graduation-cap.fa-2xl{
+    margin-bottom: 15px; 
+    margin-top:20px;
+}
+
+/* end about */
+
+
+/* skills */
+#Skils{
+    /* background-color: pink; */
+    margin-top: 150px;
+}
+#Skils h4{
+    text-align: center;
+    font-weight: 400;
+}
+
+#Skils > h1:nth-child(2){
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+
+}
+
+.skils-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: fit-content;
+    border: solid 2px black;
+    border-radius: 16px;
+    margin: 20px auto;
+    padding: 20px 40px;
 }
 
 
+
+.skils-content ul{
+    margin-top: 28px;
+}
+.skils-content ul li{
+    margin-bottom: 20px;
+}
+
+.skils-content ul li span{
+    font-weight: bold;
+}
+
+/* end skills */
+#project{
+    margin-top: 150px;
+    /* background-color: pink; */
+}
+
+#project h4{
+    text-align: center;
+    font-weight: 400;
+}
+#project h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.project-content{
+    display: flex;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-project{
+    background-color: rgb(250, 250, 250);
+    border: 2px solid rgb(163, 163, 163);;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin: 0 30px;
+}
+
+.container-project h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-img{
+    width: 320px;
+    height: 320px;
+    background-color: aquamarine;
+    border-radius: 16px;
+}
+
+.project-detail{
+    display: flex;
+    justify-content: center;
+}
+.project-detail button{
+    width: 105px;
+    height: 60px;
+    padding: 0 10px;
+    margin: 10px 15px;
+    border-radius: 16px;
+}
+
+/* end project */
+
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    /* background-color: pink; */
+}
+#contact h4{
+    text-align: center;
+    font-weight: 400;
+}
+#contact h1{
+    text-align: center;
+    font-size: 40px;
+}
+.contact-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px 0;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+.contact-detail div{
+    margin: 0 20px;
+}
+
+.contact-detail div a{
+    text-decoration: none;
+    color: black;
+}
+.contact-detail div i{
+    margin-right: 7px;
+}
+
+/* end contact */
+
+footer{
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px;
+    font-weight: 200;
+}

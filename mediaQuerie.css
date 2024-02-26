@@ -26,6 +26,8 @@
 
     #home{
         flex-direction: column;
+        margin-top: 105px;
+
     }
 
     .hero-img{
@@ -34,5 +36,51 @@
 
     .hero-txt{
         margin-top: 20px;
+    }
+
+
+    .img-about{
+        width: 280px;
+        height: 300px;
+        border: 2px solid black;
+        margin-left: 0;
+        margin-top: 25px;
+        border-radius: 16px;
+    }
+
+    .experience-education{
+        display: flex;
+        margin-left: 0;
+        margin-top: 70px;
+        /* background-color: greenyellow; */
+        width: 90%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about-content .experience-education .experience{
+        margin-bottom: 35px;
+    }
+
+    .experience-education > p:last-child{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .skils-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 250px;
+        height: fit-content;
+        border: solid 2px black;
+        border-radius: 16px;
+        margin: 20px auto;
+        padding: 20px 40px;
+    }
+
+    .skils-content h1{
+        font-size: 21px;
     }
 }
