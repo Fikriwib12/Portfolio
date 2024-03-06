@@ -1,375 +1,387 @@
 /* General */
 
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Poppins", Arial, Helvetica, sans-serif
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 /* Navbar */
-.container{
-    position: relative;
+.container {
+  position: relative;
 }
-nav{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 80px;
-    align-items: center;
-    background-color: white;
-    top: 0;
-    z-index: 2;
-    
-    
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  background-color: white;
+  top: 0;
+  z-index: 2;
 }
-.hamburger-icon{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25px;
-    
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
 }
-.hamburger-icon span{
-    display: block;
-    width: 28px;
-    height: 2px;
-    background-color: black;
-    
+.hamburger-icon span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: black;
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-evenly;
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-evenly;
 }
 
 /* End Navbar */
 
 /* home */
 
-#home{
-    margin-top: 30px;
-    /* background-color: pink; */
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+#home {
+  margin-top: 30px;
+  /* background-color: pink; */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-img{
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: rgb(250, 250, 250);
-    background-image: url(assets/foto-porfolio-1-nobg.png);
-    background-size: 240% ;
-    background-repeat: no-repeat;
-    background-position: center -130px ;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    filter: brightness(110%);
-    margin-right: 80px;
-    
+.hero-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  background-image: url(assets/foto-porfolio-1-nobg.png);
+  background-size: 240%;
+  background-repeat: no-repeat;
+  background-position: center -130px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  filter: brightness(110%);
+  margin-right: 80px;
 }
 
-.hero-txt{
-    /* background-color: aliceblue; */
-    text-align: center;
-    line-height: 35px;
+.hero-txt {
+  /* background-color: aliceblue; */
+  text-align: center;
+  line-height: 35px;
 }
 
-.hero-txt > h3:nth-child(3){
-    font-weight: 400;
+.hero-txt > h3:nth-child(3) {
+  font-weight: 400;
 }
 
-div.resume-contact{
-    display: flex;
-    margin-top: 10px;
-    /* background-color: red; */
+div.resume-contact {
+  display: flex;
+  margin-top: 10px;
+  /* background-color: red; */
 }
 
-div.resume-contact > div:nth-child(1){
-    background-color: white;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 16px;
-    margin-right: 10px;
+div.resume-contact > div:nth-child(1) {
+  background-color: white;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 16px;
+  margin-right: 10px;
 }
-div.resume-contact > div:nth-child(2){
-    background-color: rgb(43, 42, 42);
-    color: white;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 16px;
-}
-
-div.in-gthb{
-    /* background-color: blueviolet; */
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
+div.resume-contact > div:nth-child(2) {
+  background-color: rgb(43, 42, 42);
+  color: white;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 16px;
 }
 
-div.in-gthb > img{
-    width: 30px;
-    height: 30px;
+div.in-gthb {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
 }
 
-div.in-gthb > img:nth-child(1){
-    margin-right: 20px;
+div.in-gthb > img {
+  width: 30px;
+  height: 30px;
+}
+
+div.in-gthb > img:nth-child(1) {
+  margin-right: 20px;
 }
 
 /* end home */
 
-
 /* about */
-#about{
-    /* background-color: aliceblue; */
-    margin-top: 80px;
+#about {
+  /* background-color: aliceblue; */
+  margin-top: 80px;
 }
 
-section#about > h4:first-child{
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
+section#about > h4:first-child {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-section#about > h1{
-    text-align: center;
-    font-size: 35px;
-    letter-spacing: 2px;
+section#about > h1 {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
-.img-about{
-    width: 280px;
-    height: 300px;
-    border: 2px solid black;
-    margin-left: 50px;
-    margin-top: 25px;
-    border-radius: 16px;
+.img-about {
+  width: 280px;
+  height: 300px;
+  /* border: 2px solid black; */
+  margin-left: 50px;
+  margin-top: 25px;
+  border-radius: 16px;
+  background-image: url(assets/foto-portfolio-2-edit-2.jpg);
 }
 
-.about-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.experience-education{
-    display: flex;
-    margin-left: 40px;
-    margin-top: 70px;
-    /* background-color: greenyellow; */
-    width: 55%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.experience-education {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 70px;
+  /* background-color: greenyellow; */
+  width: 55%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.about-content .experience-education .experience{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: antiquewhite; */
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 16px;
-    padding: 1px 60px;
+.about-content .experience-education .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: antiquewhite; */
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 1px 60px;
 }
 
-.experience-education > p:last-child{
-    margin-top: 20px; 
-    margin-left: 30px;
+.experience-education > p:last-child {
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
-.fa-solid.fa-award.fa-2xl{
-    margin-bottom: 20px; 
-    margin-top:20px;
+.fa-solid.fa-award.fa-2xl {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.about-content .experience-education .education{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: antiquewhite; */
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 16px;
-    padding: 1px 60px;
+.about-content .experience-education .education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: antiquewhite; */
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 1px 60px;
 }
 
-.fa-solid.fa-graduation-cap.fa-2xl{
-    margin-bottom: 15px; 
-    margin-top:20px;
+.fa-solid.fa-graduation-cap.fa-2xl {
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 /* end about */
 
-
 /* skills */
-#Skils{
-    /* background-color: pink; */
-    margin-top: 150px;
+#Skils {
+  /* background-color: pink; */
+  margin-top: 150px;
 }
-#Skils h4{
-    text-align: center;
-    font-weight: 400;
-}
-
-#Skils > h1:nth-child(2){
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 10px;
-
+#Skils h4 {
+  text-align: center;
+  font-weight: 400;
 }
 
-.skils-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 300px;
-    height: fit-content;
-    border: solid 2px black;
-    border-radius: 16px;
-    margin: 20px auto;
-    padding: 20px 40px;
+#Skils > h1:nth-child(2) {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+#Skils > h1:nth-child(3) {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
 }
 
-
-
-.skils-content ul{
-    margin-top: 28px;
+.skils-icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  margin-top: 60px;
+  background-color: aliceblue;
 }
-.skils-content ul li{
-    margin-bottom: 20px;
+.skils-icon div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.skils-content ul li span{
-    font-weight: bold;
+.skils-icon i {
+  font-size: 50px;
+}
+
+.skils-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+  height: fit-content;
+  border: solid 2px black;
+  border-radius: 16px;
+  margin: 20px auto;
+  padding: 20px 40px;
+}
+
+.skils-content ul {
+  margin-top: 28px;
+}
+.skils-content ul li {
+  margin-bottom: 20px;
+}
+
+.skils-content ul li span {
+  font-weight: bold;
 }
 
 /* end skills */
-#project{
-    margin-top: 150px;
-    /* background-color: pink; */
+#project {
+  margin-top: 150px;
+  /* background-color: pink; */
 }
 
 /* project */
 
-#project h4{
-    text-align: center;
-    font-weight: 400;
+#project h4 {
+  text-align: center;
+  font-weight: 400;
 }
-#project h1{
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 5px;
+#project h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
-.project-content{
-    display: flex;
-    /* background-color: antiquewhite; */
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+.project-content {
+  display: flex;
+  /* background-color: antiquewhite; */
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
 }
-.container-project{
-    background-color: rgb(250, 250, 250);
-    border: 2px solid rgb(163, 163, 163);;
-    width: fit-content;
-    height: fit-content;
-    padding: 1.5rem;
-    border-radius: 16px;
-    margin: 0 30px;
-}
-
-.container-project h3{
-    text-align: center;
-    margin-top: 10px;
+.container-project {
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(163, 163, 163);
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin: 0 30px;
 }
 
-.project-img{
-    width: 320px;
-    height: 320px;
-    background-color: aquamarine;
-    border-radius: 16px;
+.container-project h3 {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.project-detail{
-    display: flex;
-    justify-content: center;
+.project-img {
+  width: 320px;
+  height: 320px;
+  background-color: aquamarine;
+  border-radius: 16px;
 }
-.project-detail button{
-    width: 105px;
-    height: 60px;
-    padding: 0 10px;
-    margin: 10px 15px;
-    border-radius: 16px;
+
+.project-detail {
+  display: flex;
+  justify-content: center;
+}
+.project-detail button {
+  width: 105px;
+  height: 60px;
+  padding: 0 10px;
+  margin: 10px 15px;
+  border-radius: 16px;
 }
 
 /* end project */
 
-
 /* contact */
-#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 150px;
-    /* background-color: pink; */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+  /* background-color: pink; */
 }
-#contact h4{
-    text-align: center;
-    font-weight: 400;
+#contact h4 {
+  text-align: center;
+  font-weight: 400;
 }
-#contact h1{
-    text-align: center;
-    font-size: 40px;
+#contact h1 {
+  text-align: center;
+  font-size: 40px;
 }
-.contact-detail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    width: 400px;
-    padding: 20px 0;
-    border: 2px solid black;
-    border-radius: 16px;
+.contact-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 400px;
+  padding: 20px 0;
+  border: 2px solid black;
+  border-radius: 16px;
 }
-.contact-detail div{
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.contact-detail div {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.fa-solid.fa-envelope-open-text{
-    font-size: 1.5rem;
+.fa-solid.fa-envelope-open-text {
+  font-size: 1.5rem;
 }
-.fa-brands.fa-linkedin{
-    font-size: 1.5rem;
+.fa-brands.fa-linkedin {
+  font-size: 1.5rem;
 }
-.contact-detail div{
-    margin: 0 20px;
+.contact-detail div {
+  margin: 0 20px;
 }
 
-.contact-detail div a{
-    text-decoration: none;
-    color: black;
+.contact-detail div a {
+  text-decoration: none;
+  color: black;
 }
-.contact-detail div i{
-    margin-right: 7px;
+.contact-detail div i {
+  margin-right: 7px;
 }
 
 /* end contact */
 
-footer{
-    text-align: center;
-    margin-top: 150px;
-    padding: 20px;
-    font-weight: 200;
+footer {
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
+  font-weight: 200;
 }

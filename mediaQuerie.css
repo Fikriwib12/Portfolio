@@ -1,131 +1,125 @@
-@media screen and (max-width:600px) {
-    nav{
-       
+@media screen and (max-width: 600px) {
+  nav {
+  }
+  nav ul {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .tampil-nav-ul {
+    display: flex;
+    opacity: 1;
+  }
+  .hamburger-icon {
+    display: flex;
+    z-index: 2;
+  }
 
-    }
-    nav ul{
-        display: none;
-        opacity: 0;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        background-color: white;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .tampil-nav-ul{
-        display: flex;
-        opacity: 1;
-    }
-    .hamburger-icon{
-        display: flex;
-        z-index: 2;
-    }
+  #home {
+    flex-direction: column;
+    margin-top: 70px;
+  }
 
-    #home{
-        flex-direction: column;
-        margin-top: 70px;
+  .hero-img {
+    width: 280px;
+    height: 280px;
+    margin-right: 0;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0;
+  }
 
-    }
+  .img-about {
+    width: 280px;
+    height: 300px;
+    border: 2px solid black;
+    margin-left: 0;
+    margin-top: 25px;
+    border-radius: 16px;
+  }
 
-    .hero-img{
-        width: 280px;
-        height: 280px;
-        margin-right: 0;
-        background-size: cover;
-        background-position: center;
-        margin: 50px 0;
-    }
+  .experience-education {
+    display: flex;
+    margin-left: 0;
+    margin-top: 70px;
+    /* background-color: greenyellow; */
+    width: 90%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-   
+  .about-content .experience-education .experience {
+    margin-bottom: 35px;
+  }
 
+  .experience-education > p:last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 
-    .img-about{
-        width: 280px;
-        height: 300px;
-        border: 2px solid black;
-        margin-left: 0;
-        margin-top: 25px;
-        border-radius: 16px;
-    }
+  .skils-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
+    height: fit-content;
+    border: solid 2px black;
+    border-radius: 16px;
+    margin: 20px auto;
+    padding: 20px 40px;
+  }
 
-    .experience-education{
-        display: flex;
-        margin-left: 0;
-        margin-top: 70px;
-        /* background-color: greenyellow; */
-        width: 90%;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+  .skils-content h1 {
+    font-size: 21px;
+  }
 
-    .about-content .experience-education .experience{
-        margin-bottom: 35px;
-    }
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .experience-education > p:last-child{
-        margin-left: 0;
-        margin-top: 20px;
-    }
+  .container-project {
+    margin: 20px 0;
+  }
 
-    .skils-content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 250px;
-        height: fit-content;
-        border: solid 2px black;
-        border-radius: 16px;
-        margin: 20px auto;
-        padding: 20px 40px;
-    }
+  .project-img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .project-detail button {
+    width: 90px;
+    height: 45px;
+    padding: 0 10px;
+    margin: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
 
-    .skils-content h1{
-        font-size: 21px;
-    }
+  .contact-detail {
+    width: 350px;
+  }
+  .contact-detail div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-    .project-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-project{
-        margin: 20px 0;
-    }
-
-    .project-img{
-        width: 250px;
-        height: 250px;
-        margin: auto;
-    }
-    .project-detail button{
-        width: 90px;
-        height: 45px;
-        padding: 0 10px;
-        margin: 10px 15px;
-        box-sizing: border-box;
-        border-radius: 16px;
-    }
-
-    .contact-detail{
-        width: 350px;
-    }
-    .contact-detail div{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
- 
-    .contact-detail a{
-        font-size: 12px;
-    }
-    .fa-solid.fa-envelope-open-text{
-        font-size: 1.3rem;
-    }
-    .fa-brands.fa-linkedin{
-        font-size: 1.3rem;
-    }
+  .contact-detail a {
+    font-size: 12px;
+  }
+  .fa-solid.fa-envelope-open-text {
+    font-size: 1.3rem;
+  }
+  .fa-brands.fa-linkedin {
+    font-size: 1.3rem;
+  }
 }
