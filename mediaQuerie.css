@@ -65,20 +65,8 @@
     margin-top: 20px;
   }
 
-  .skils-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 250px;
-    height: fit-content;
-    border: solid 2px black;
-    border-radius: 16px;
-    margin: 20px auto;
-    padding: 20px 40px;
-  }
-
-  .skils-content h1 {
-    font-size: 21px;
+  .skils-icon {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .project-content {
