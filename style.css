@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
@@ -23,6 +25,10 @@ nav {
   background-color: white;
   top: 0;
   z-index: 2;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 .hamburger-icon {
   display: none;
@@ -50,7 +56,6 @@ nav ul {
 
 #home {
   margin-top: 30px;
-  /* background-color: pink; */
   height: 90vh;
   display: flex;
   align-items: center;
@@ -87,24 +92,23 @@ div.resume-contact {
   /* background-color: red; */
 }
 
-div.resume-contact > button {
+div.resume-contact > a {
   padding: 16px;
   border-radius: 16px;
   margin-right: 10px;
   border: 2px solid black;
-}
-div.resume-contact button a {
   text-decoration: none;
   color: black;
 }
+
 div.resume-contact button a.contact-info {
   color: white;
 }
 
-div.resume-contact > button:nth-child(1) {
+div.resume-contact > a:nth-child(1) {
   background-color: white;
 }
-div.resume-contact > button:nth-child(2) {
+div.resume-contact > a:nth-child(2) {
   background-color: rgb(43, 42, 42);
   color: white;
 }
@@ -332,20 +336,33 @@ section#about > h1 {
 .project-img {
   width: 320px;
   height: 320px;
-  background-color: aquamarine;
   border-radius: 16px;
+}
+
+.webihouse {
+  background-image: url(assets/webihouse.jpg);
+}
+.digihouse {
+  background-image: url(assets/digihouse.jpg);
 }
 
 .project-detail {
   display: flex;
   justify-content: center;
 }
-.project-detail button {
-  width: 105px;
-  height: 60px;
-  padding: 0 10px;
+.project-detail a {
+  /* width: 105px;
+  height: 60px; */
+  padding: 20px 15px;
   margin: 10px 15px;
   border-radius: 16px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+.project-detail a {
+  text-decoration: none;
+  color: black;
 }
 
 /* end project */
