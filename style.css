@@ -10,7 +10,10 @@ html {
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
-
+.dark {
+  background-color: #282828;
+  color: white;
+}
 /* Navbar */
 .container {
   position: relative;
@@ -26,9 +29,16 @@ nav {
   top: 0;
   z-index: 2;
 }
+.dark nav {
+  background-color: #121212;
+}
 nav ul li a {
   text-decoration: none;
   color: black;
+}
+.dark nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 .hamburger-icon {
   display: none;
@@ -75,9 +85,10 @@ nav ul {
   filter: brightness(110%);
   margin-right: 80px;
 }
-
+.dark .hero-img {
+  box-shadow: 1px 2px 18px 4px rgba(255, 255, 255, 1);
+}
 .hero-txt {
-  /* background-color: aliceblue; */
   text-align: center;
   line-height: 35px;
 }
@@ -85,11 +96,13 @@ nav ul {
 .hero-txt > h3:nth-child(3) {
   font-weight: 400;
 }
-
+.dark .hero-txt > h3:nth-child(3) {
+  font-weight: 400;
+  color: rgb(199, 198, 198);
+}
 div.resume-contact {
   display: flex;
   margin-top: 10px;
-  /* background-color: red; */
 }
 
 div.resume-contact > a {
@@ -100,6 +113,9 @@ div.resume-contact > a {
   text-decoration: none;
   color: black;
 }
+.dark div.resume-contact > a {
+  border: 2px solid white;
+}
 
 div.resume-contact button a.contact-info {
   color: white;
@@ -108,9 +124,18 @@ div.resume-contact button a.contact-info {
 div.resume-contact > a:nth-child(1) {
   background-color: white;
 }
+.dark div.resume-contact > a:nth-child(1) {
+  background-color: #282828;
+  color: white;
+}
+
 div.resume-contact > a:nth-child(2) {
   background-color: rgb(43, 42, 42);
   color: white;
+}
+.dark div.resume-contact > a:nth-child(2) {
+  background-color: white;
+  color: black;
 }
 
 div.in-gthb {
@@ -119,8 +144,26 @@ div.in-gthb {
   justify-content: center;
   margin-top: 18px;
 }
+div.in-gthb-white {
+  /* background-color: blueviolet; */
+  display: none;
+  justify-content: center;
+  margin-top: 18px;
+}
+.dark div.in-gthb {
+  /* background-color: blueviolet; */
+  display: none;
+}
+.dark div.in-gthb-white {
+  /* background-color: blueviolet; */
+  display: flex;
+}
 
 div.in-gthb > a img {
+  width: 30px;
+  height: 30px;
+}
+div.in-gthb-white > a img {
   width: 30px;
   height: 30px;
 }
@@ -128,7 +171,9 @@ div.in-gthb > a img {
 div.in-gthb > a img:nth-child(1) {
   margin-right: 20px;
 }
-
+div.in-gthb-white > a img:nth-child(1) {
+  margin-right: 20px;
+}
 /* end home */
 
 /* about */
@@ -185,6 +230,9 @@ section#about > h1 {
   border-radius: 16px;
   padding: 1px 60px;
 }
+.dark .about-content .experience-education .experience {
+  border: 2px solid white;
+}
 
 .experience-education > p:last-child {
   margin-top: 20px;
@@ -205,6 +253,9 @@ section#about > h1 {
   border: 2px solid black;
   border-radius: 16px;
   padding: 1px 60px;
+}
+.dark .about-content .experience-education .education {
+  border: 2px solid white;
 }
 
 .fa-solid.fa-graduation-cap.fa-2xl {
@@ -234,7 +285,12 @@ section#about > h1 {
   color: gray;
   margin-top: 20px;
 }
-
+.dark #Skils > h1:nth-child(3) {
+  color: rgb(223, 223, 223);
+}
+.dark .tailwind {
+  fill: white;
+}
 .skils-icon {
   width: 100%;
   display: grid;
@@ -249,7 +305,6 @@ section#about > h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: salmon; */
 }
 
 .skils-icon i {
@@ -331,6 +386,7 @@ section#about > h1 {
 .container-project h3 {
   text-align: center;
   margin-top: 10px;
+  color: black;
 }
 
 .project-img {
@@ -393,6 +449,9 @@ section#about > h1 {
   border: 2px solid black;
   border-radius: 16px;
 }
+.dark .contact-detail {
+  border: 2px solid white;
+}
 .contact-detail div {
   align-items: center;
   justify-content: center;
@@ -412,15 +471,73 @@ section#about > h1 {
   text-decoration: none;
   color: black;
 }
+.dark .contact-detail div a {
+  text-decoration: none;
+  color: white;
+}
 .contact-detail div i {
   margin-right: 7px;
 }
 
 /* end contact */
 
+/* toogle butoon */
+.toogle-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  display: none;
+}
+.toogle-section p {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.toogle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 40px; */
+}
+
+.button-toogle {
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+.button-toogle::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+input:checked + .button-toogle {
+  background-color: darkblue;
+}
+
+input:checked + .button-toogle::before {
+  transform: translateX(25px);
+}
+
+input {
+  display: none;
+}
+/* end toogle butoon */
+
 footer {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 150px;
   padding: 20px;
   font-weight: 200;
+}
+
+footer p {
+  text-align: center;
 }

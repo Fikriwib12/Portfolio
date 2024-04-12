@@ -12,6 +12,10 @@
     right: 0;
     transition: 1s;
   }
+
+  .dark nav ul {
+    background-color: #282828;
+  }
   nav ul.tampil-nav-ul {
     display: flex;
     opacity: 1;
@@ -21,6 +25,13 @@
   .hamburger-icon {
     display: flex;
     z-index: 2;
+  }
+  .dark .hamburger-icon span {
+    background-color: white;
+  }
+
+  i.dark-mode {
+    display: none;
   }
 
   #home {
@@ -120,5 +131,9 @@
   }
   .fa-brands.fa-linkedin {
     font-size: 1.3rem;
+  }
+
+  .toogle-section {
+    display: flex;
   }
 }
