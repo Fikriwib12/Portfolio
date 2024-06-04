@@ -12,25 +12,25 @@ navLink.forEach((item) => {
   });
 });
 
-// dark mode
-const darkModeBtn = document.querySelector(".dark-mode");
-darkModeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
-  darkModeBtn.classList.toggle("fa-moon");
-  darkModeBtn.classList.toggle("fa-sun");
-  const isDarkmode = document.body.classList.contains("dark");
-  localStorage.setItem("darkMode", isDarkmode);
-});
-
 const toggle = document.getElementById("check");
+const darkModeBtn = document.querySelector(".dark-mode");
 
-toggle.addEventListener("change", function () {
+function darkMode() {
   document.body.classList.toggle("dark");
-  darkModeBtn.classList.toggle("fa-sun");
   darkModeBtn.classList.toggle("fa-moon");
+  darkModeBtn.classList.toggle("fa-sun");
   const isDarkMode = document.body.classList.contains("dark");
+  // Save dark mode preference to localStorage
   localStorage.setItem("darkMode", isDarkMode);
-});
+  // Update the checkbox state
+  toggle.checked = isDarkMode;
+}
+
+// dark mode
+
+darkModeBtn.addEventListener("click", darkMode);
+
+toggle.addEventListener("change", darkMode);
 const isDarkmode = localStorage.getItem("darkMode") === "true";
 
 if (isDarkmode) {
