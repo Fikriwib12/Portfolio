@@ -37,4 +37,5 @@ if (isDarkmode) {
   document.body.classList.add("dark");
   darkModeBtn.classList.toggle("fa-moon");
   darkModeBtn.classList.toggle("fa-sun");
+  toggle.checked = true;
 }
