@@ -30,7 +30,7 @@ nav {
   z-index: 2;
 }
 .dark nav {
-  background-color: #121212;
+  background-color: #272727;
 }
 nav ul li a {
   position: relative;
@@ -54,8 +54,25 @@ nav ul li a:hover:after {
   width: 100%;
 }
 .dark nav ul li a {
+  position: relative;
   text-decoration: none;
   color: white;
+}
+.dark nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s;
+}
+.dark nav ul li a:hover {
+  color: #989797;
+}
+.dark nav ul li a:hover:after {
+  width: 100%;
 }
 .hamburger-icon {
   display: none;
