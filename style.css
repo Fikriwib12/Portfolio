@@ -252,6 +252,7 @@ section#about > h1 {
   width: 55%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  row-gap: 20px;
 }
 
 .about-content .experience-education .experience {
@@ -410,10 +411,12 @@ section#about > h1 {
 }
 .project-content {
   display: flex;
+  flex-wrap: wrap;
   /* background-color: antiquewhite; */
   width: 100%;
   justify-content: center;
   margin-top: 20px;
+  row-gap: 25px;
 }
 .container-project {
   background-color: rgb(250, 250, 250);
@@ -442,6 +445,14 @@ section#about > h1 {
 }
 .digihouse {
   background-image: url(assets/digihouse.jpg);
+}
+.thi {
+  background-image: url(assets/thc-mockup.jpg);
+  background-size: cover;
+}
+.mdi {
+  background-image: url(assets/mdi-mockup.jpg);
+  background-size: cover;
 }
 
 .project-detail {
